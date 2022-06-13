@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,800;0,900;1,300;1,400;1,500;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #b8dafc;
+}
+
+/* Container */
+.container {
+    width: 700px;
+    height: 500px;
+    background-color: #fff;
+    margin: 120px 0 120px 100px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Title */
+.title h2 {
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.title p {
+    font-size: 15px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* Pages */
+.pages {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.pages a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    font-variant: small-caps;
+}
+
+.pages .box-pages {
+    width: 300px;
+    height: 100px;
+    margin: 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+    background-color: lightblue;
+    text-align: center;
+    line-height: 70px;
+}
+
+.pages .box-pages:hover {
+    background-color: lightcoral;
+}
+
+.pages .box-pages:active {
+    background-color: lightblue;
+}
+
+/* Image */
+.image {
+    position: absolute;
+    top: 150px;
+    right: 50px;
+}
+
+/* Noted */
+.noted {
+    width: 600px;
+    margin: 20px auto;
+}
+
+.noted img {
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.noted p {
+    color: rgb(239, 62, 62);
+}
