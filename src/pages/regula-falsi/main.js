@@ -11,7 +11,7 @@ function resultData() {
 
     /* if value input = "" */
     if (iterasi == "" || a == "" || b == "") {
-        return;
+        return false;
     }
     /* Declaration Variables End */
 
