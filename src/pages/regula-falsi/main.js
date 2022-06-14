@@ -9,9 +9,11 @@ function resultData() {
     var c = b - ((fb * (b - a)) / (fb - fa));
     var fc = ((c * c * c) - (c * c) - c + 1);
 
+
     /* if value input = "" */
     if (iterasi == "" || a == "" || b == "") {
         location.reload();
+        return;
     } else {
         /* Output on first row list data result Start */
         var iterasiElement = document.createElement('h4');
