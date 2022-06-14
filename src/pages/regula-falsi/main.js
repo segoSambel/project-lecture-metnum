@@ -12,7 +12,7 @@ function resultData() {
 
     /* if value input = "" */
     if (iterasi == "" || a == "" || b == "") {
-        return;
+        alert("Please fill all field");
     }
 
     /* Output on first row list data result Start */
