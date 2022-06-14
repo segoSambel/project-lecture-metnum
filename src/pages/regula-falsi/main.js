@@ -13,7 +13,7 @@ function resultData() {
     /* if value input = "" */
     if (iterasi == "" || a == "" || b == "") {
         alert("Masukkan nilai dengan benar!!");
-        return;
+        return false;
     }
 
     /* Output on first row list data result Start */
