@@ -11,7 +11,7 @@ function resultData() {
 
     /* if value input = "" */
     if (iterasi == "" || a == "" || b == "") {
-        return false;
+        location.reload();
     } else {
         /* Output on first row list data result Start */
         var iterasiElement = document.createElement('h4');
