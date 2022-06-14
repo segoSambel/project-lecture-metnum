@@ -12,7 +12,7 @@ function resultData() {
 
     /* if value input = null */
     if (iterasi == "" || a == "" || b == "") {
-        alert("Anda Belum Memasukkan Data");
+        alert("Masukkan angka di kolom yang tersedia");
         return;
     }
 
