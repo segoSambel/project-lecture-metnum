@@ -12,7 +12,8 @@ function resultData() {
 
     /* if value input = "" */
     if (iterasi == "" || a == "" || b == "") {
-        alert("Please fill all field");
+        alert('Masukkan nilai dengan benar!!');
+        return;
     }
 
     /* Output on first row list data result Start */
