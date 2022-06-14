@@ -12,6 +12,7 @@ function resultData() {
 
     /* if value input = "" */
     if (iterasi == "" || a == "" || b == "") {
+        alert("Anda Belum Memasukkan Data");
         return;
     }
 
