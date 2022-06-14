@@ -12,7 +12,6 @@ function resultData() {
 
     /* if value input = "" */
     if (iterasi == "" || a == "" || b == "") {
-        location.reload();
         return;
     } else {
         /* Output on first row list data result Start */
