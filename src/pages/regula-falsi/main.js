@@ -8,6 +8,11 @@ function resultData() {
     var fb = ((b * b * b) - (b * b) - b + 1);
     var c = b - ((fb * (b - a)) / (fb - fa));
     var fc = ((c * c * c) - (c * c) - c + 1);
+
+    /* if value input = "" */
+    if (iterasi == "" || a == "" || b == "") {
+        return;
+    }
     /* Declaration Variables End */
 
 
