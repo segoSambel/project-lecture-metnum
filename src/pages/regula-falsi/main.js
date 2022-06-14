@@ -10,7 +10,7 @@ function resultData() {
     var fc = ((c * c * c) - (c * c) - c + 1);
 
 
-    /* if value input = "" */
+    /* if value input = null */
     if (iterasi == "" || a == "" || b == "") {
         alert("Anda Belum Memasukkan Data");
         return;
