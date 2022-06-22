@@ -1,0 +1,19 @@
+{
+  "name": "project-lecture-metnum",
+  "version": "1.0.0",
+  "description": "Project ini merupakan project dari mata kuliah Metode Numerik.",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reyhanhaqiqi/project-lecture-metnum.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reyhanhaqiqi/project-lecture-metnum/issues"
+  },
+  "homepage": "https://github.com/reyhanhaqiqi/project-lecture-metnum#readme"
+}

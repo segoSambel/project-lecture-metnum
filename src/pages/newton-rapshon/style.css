@@ -1,15 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,800;0,900;1,300;1,400;1,500;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,800;0,900;1,300;1,400;1,500;1,800;1,900&display=swap");
 
 * {
     margin: 0;
     padding: 0;
-    font-family: 'poppins', sans-serif;
+    font-family: "poppins", sans-serif;
 }
 
 body {
-    background-color: #FAFAFA;
+    background-color: #fafafa;
 }
-
 
 /* Title Name */
 .title {
@@ -22,7 +21,6 @@ body {
     font-size: 30px;
 }
 
-
 /* Desc Rumus */
 .desc {
     width: 100%;
@@ -33,12 +31,12 @@ body {
     box-sizing: border-box;
     text-align: center;
     font-size: 18px;
+    font-weight: normal;
     position: sticky;
     top: 0;
     z-index: 2;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 }
-
 
 /* Input Data */
 .container {
@@ -53,7 +51,7 @@ body {
 }
 
 .container .iterasi,
-.xi {
+.xr {
     padding: 5px 500px;
     text-align: center;
     border-radius: 5px;
@@ -104,9 +102,8 @@ body {
     position: absolute;
     top: 5px;
     left: 40px;
-    color: #E2574C;
+    color: #e2574c;
 }
-
 
 /* Result Data */
 .container-data {
@@ -141,15 +138,15 @@ body {
 .container-iterasi h3 {
     width: 200px;
     padding: 10px;
-    margin: 0 5px 0 0px;
+    margin: 0 5px 0 10px;
     border-radius: 5px;
     background-color: #000000;
-    color: #FFFFFF;
+    color: #ffffff;
     text-align: center;
 }
 
 .iterasi-box h4 {
-    width: 100px;
+    width: 200px;
     height: 20px;
     padding: 10px;
     margin: 10px 5px 0 10px;
@@ -160,7 +157,7 @@ body {
 }
 
 .iterasi-box p {
-    width: 100px;
+    width: 200px;
     height: 20px;
     padding: 10px;
     margin: 10px 5px 0 10px;
@@ -169,25 +166,24 @@ body {
     text-align: center;
 }
 
-
-/* ! xi Result Data */
-.container-xi {
+/* ! xr Result Data */
+.container-xr {
     width: 210px;
     float: left;
 }
 
-.container-xi h3 {
+.container-xr h3 {
     width: 200px;
     padding: 10px;
     margin: 0 5px 0 10px;
     border-radius: 5px;
     background-color: #000000;
-    color: #FFFFFF;
+    color: #ffffff;
     text-align: center;
 }
 
-.xi-box h4 {
-    width: 100px;
+.xr-box h4 {
+    width: 200px;
     height: 20px;
     padding: 10px;
     margin: 10px 5px 0 10px;
@@ -197,8 +193,8 @@ body {
     font-weight: normal;
 }
 
-.xi-box p {
-    width: 100px;
+.xr-box p {
+    width: 200px;
     height: 20px;
     padding: 10px;
     margin: 10px 5px 0 10px;
@@ -206,7 +202,6 @@ body {
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 1);
     text-align: center;
 }
-
 
 /* ! er Result Data */
 .container-er {
@@ -220,12 +215,12 @@ body {
     margin: 0 5px 0 10px;
     border-radius: 5px;
     background-color: #000000;
-    color: #FFFFFF;
+    color: #ffffff;
     text-align: center;
 }
 
 .er-box div {
-    width: 100px;
+    width: 200px;
     height: 20px;
     padding: 10px;
     margin: 10px 5px 0 10px;
@@ -236,7 +231,7 @@ body {
 }
 
 .er-box p {
-    width: 100px;
+    width: 200px;
     height: 20px;
     padding: 10px;
     margin: 10px 5px 0 10px;
@@ -244,7 +239,6 @@ body {
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 1);
     text-align: center;
 }
-
 
 /* Download Section */
 .download {
@@ -286,13 +280,12 @@ body {
     transform: translateY(4px);
 }
 
-
 /* Footer */
 .footer {
     width: 100%;
     height: 60px;
     margin-top: 100px;
-    background-color: #ADD8E6;
+    background-color: #add8e6;
     line-height: 60px;
     text-align: center;
     font-size: 17px;
@@ -306,9 +299,9 @@ body {
 .footer .home {
     width: 100px;
     height: 60px;
-    background-color: #F08080;
+    background-color: #f08080;
     border-radius: 10px;
-    border: 1px solid #F08080;
+    border: 1px solid #f08080;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 195px;
@@ -322,9 +315,9 @@ body {
 .footer .scroll {
     width: 100px;
     height: 60px;
-    background-color: #F08080;
+    background-color: #f08080;
     border-radius: 10px;
-    border: 1px solid #F08080;
+    border: 1px solid #f08080;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     position: fixed;
     bottom: 125px;
