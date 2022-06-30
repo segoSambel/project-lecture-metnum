@@ -4,11 +4,12 @@ function resultData() {
     var iterasi = document.querySelector(".iterasi").value;
     var a = document.querySelector(".a").value;
     var b = document.querySelector(".b").value;
-    var c = b - (fb * (b - a)) / (fb - fa);
-    var fa = a * a * a - (a * a - a + 1);
-    var fb = b * b * b - (b * b - b + 1);
-    var fc = c * c * c - (c * c - c + 1);
+    var c = (a + b) / 2;
+    var fa = a * a * a - a * a - a + 1;
+    var fb = b * b * b - b * b - b + 1;
+    var fc = c * c * c - c * c - c + 1;
     var fafc = fa * fc;
+    var er = Math.abs(c - b)
 
     /* if value input = null */
     if (iterasi == "" || a == "" || b == "") {
@@ -55,28 +56,27 @@ function resultData() {
     var fafcElement = document.createElement("h4");
     var fafcText = document.createTextNode(fafc.toFixed(5));
     fafcElement.appendChild(fafcText);
-    document.querySelector(".fafc-box").appendChild(fafc)
+    document.querySelector(".fafc-box").appendChild(fafcElement)
 
-    var erElement = document.createElement("div");
-    var erText = document.createTextNode(0);
-    erElement.appendChild(erText);
-    document.querySelector(".er-box").appendChild(erElement);
-    /* Output on first row list data result End */
-
-    /* Output on first row list data result Start but use if */
-    var selang = fa * fc;
-    if (selang > 0) {
+    /* Selang Choice */
+    if (fafc > 0) {
         var selangElement = document.createElement("h4");
         var selangText = document.createTextNode("[c, b]");
         selangElement.appendChild(selangText);
         document.querySelector(".selang-box").appendChild(selangElement);
-    } else if (selang < 0) {
+    } else if (fafc < 0) {
         var selangElement = document.createElement("h4");
         var selangText = document.createTextNode("[a, c]");
         selangElement.appendChild(selangText);
         document.querySelector(".selang-box").appendChild(selangElement);
     }
-    /* Output on first row list data result End but use if */
+
+    var erElement = document.createElement("h4");
+    var erText = document.createTextNode(er);
+    erElement.appendChild(erText);
+    document.querySelector(".er-box").appendChild(erElement);
+    /* Output on first row list data result End */
+
 
     /* Looping for results Start */
     for (let i = 2; i <= iterasi; i++) {
@@ -86,12 +86,11 @@ function resultData() {
         iterasiCreateElement.appendChild(text);
         document.querySelector(".iterasi-box").appendChild(iterasiCreateElement);
 
-        var result = fa * fc;
-        var tmp = c;
-        if (result > 0) {
+        if (fafc > 0) {
             /* a create element, looping & if statement */
+            var a = c;
             var aCreateElement = document.createElement("p");
-            var aText = document.createTextNode(c.toFixed(5));
+            var aText = document.createTextNode(a.toFixed(5));
             aCreateElement.appendChild(aText);
             document.querySelector(".a-box").appendChild(aCreateElement);
 
@@ -101,8 +100,15 @@ function resultData() {
             bCreateElement.appendChild(bText);
             document.querySelector(".b-box").appendChild(bCreateElement);
 
+            /* c create element, looping & if statement*/
+            var c = (a + 1) / 2;
+            var cCreateElement = document.createElement("p");
+            var cText = document.createTextNode(c.toFixed(5));
+            cCreateElement.appendChild(cText);
+            document.querySelector(".c-box").appendChild(cCreateElement);
+
             /* fa create element, looping & if statement*/
-            var fa = c * c * c - c * c - c + 1;
+            var fa = a * a * a - a * a - a + 1;
             var faCreateElement = document.createElement("p");
             var faText = document.createTextNode(fa.toFixed(5));
             faCreateElement.appendChild(faText);
@@ -115,19 +121,19 @@ function resultData() {
             fbCreateElement.appendChild(fbText);
             document.querySelector(".fb-box").appendChild(fbCreateElement);
 
-            /* c create element, looping & if statement*/
-            var c = b - (fb * (b - c)) / (fb - fa);
-            var cCreateElement = document.createElement("p");
-            var cText = document.createTextNode(c.toFixed(5));
-            cCreateElement.appendChild(cText);
-            document.querySelector(".c-box").appendChild(cCreateElement);
-
             /* fc create element, looping & if statement*/
             var fc = c * c * c - c * c - c + 1;
             var fcCreateElement = document.createElement("p");
             var fcText = document.createTextNode(fc.toFixed(5));
             fcCreateElement.appendChild(fcText);
             document.querySelector(".fc-box").appendChild(fcCreateElement);
+
+            /* fafc create element, looping & if statement*/
+            var fafc = fa * fc;
+            var fafcCreateElement = document.createElement("p");
+            var fafcText = document.createTextNode(fafc.toFixed(5));
+            fafcCreateElement.appendChild(fafcText);
+            document.querySelector(".fafc-box").appendChild(fafcCreateElement);
 
             /* selang create element, looping & if statement*/
             var selangCreateElement = document.createElement("p");
@@ -136,12 +142,13 @@ function resultData() {
             document.querySelector(".selang-box").appendChild(selangCreateElement);
 
             /* er create element, looping & if statement*/
-            var er = Math.abs((c - tmp) / c);
+            var er = Math.abs(c - b);
             var erCreateElement = document.createElement("p");
             var erText = document.createTextNode(er.toFixed(5));
             erCreateElement.appendChild(erText);
             document.querySelector(".er-box").appendChild(erCreateElement);
-        } else if (result < 0) {
+
+        } else if (fafc < 0) {
             /* a create element, looping & if statement */
             var aCreateElement = document.createElement("p");
             var text = document.createTextNode(a);
@@ -149,10 +156,18 @@ function resultData() {
             document.querySelector(".a-box").appendChild(aCreateElement);
 
             /* b create element, looping & if statement */
+            var b = c;
             var bCreateElement = document.createElement("p");
-            var text = document.createTextNode(c.toFixed(5));
+            var text = document.createTextNode(b.toFixed(5));
             bCreateElement.appendChild(text);
             document.querySelector(".b-box").appendChild(bCreateElement);
+
+            /* c create element, looping & if statement*/
+            var c = (a + b) / 2;
+            var cCreateElement = document.createElement("p");
+            var cText = document.createTextNode(c.toFixed(5));
+            cCreateElement.appendChild(cText);
+            document.querySelector(".c-box").appendChild(cCreateElement);
 
             /* fa create element, looping & if statement*/
             var fa = a * a * a - a * a - a + 1;
@@ -162,18 +177,11 @@ function resultData() {
             document.querySelector(".fa-box").appendChild(faCreateElement);
 
             /* fb create element, looping & if statement*/
-            var fb = c * c * c - c * c - c + 1;
+            var fb = b * b * b - b * b - b + 1;
             var fbCreateElement = document.createElement("p");
             var fbText = document.createTextNode(fb.toFixed(5));
             fbCreateElement.appendChild(fbText);
             document.querySelector(".fb-box").appendChild(fbCreateElement);
-
-            /* c create element, looping & if statement*/
-            var c = c - (fb * (c - a)) / (fb - fa);
-            var cCreateElement = document.createElement("p");
-            var cText = document.createTextNode(c.toFixed(5));
-            cCreateElement.appendChild(cText);
-            document.querySelector(".c-box").appendChild(cCreateElement);
 
             /* fc create element, looping & if statement*/
             var fc = c * c * c - c * c - c + 1;
@@ -182,16 +190,21 @@ function resultData() {
             fcCreateElement.appendChild(fcText);
             document.querySelector(".fc-box").appendChild(fcCreateElement);
 
+            /* fafc create element, looping & if statement*/
+            var fafc = fa * fc;
+            var fafcCreateElement = document.createElement("p");
+            var fafcText = document.createTextNode(fafc.toFixed(5));
+            fafcCreateElement.appendChild(fafcText);
+            document.querySelector(".fafc-box").appendChild(fafcCreateElement);
+
             /* selang create element, looping & if statement*/
             var selangCreateElement = document.createElement("p");
             var selangText = document.createTextNode("[a, c]");
             selangCreateElement.appendChild(selangText);
-            document
-                .querySelector(".selang-box")
-                .appendChild(selangCreateElement);
+            document.querySelector(".selang-box").appendChild(selangCreateElement);
 
             /* er create element, looping & if statement*/
-            var er = Math.abs((c - tmp) / c);
+            var er = Math.abs(c - b);
             var erCreateElement = document.createElement("p");
             var erText = document.createTextNode(er.toFixed(5));
             erCreateElement.appendChild(erText);

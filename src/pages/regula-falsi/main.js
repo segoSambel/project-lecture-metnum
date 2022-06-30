@@ -4,10 +4,10 @@ function resultData() {
     var iterasi = document.querySelector(".iterasi").value;
     var a = document.querySelector(".a").value;
     var b = document.querySelector(".b").value;
-    var fa = a * a * a - (a * a - a + 1);
-    var fb = b * b * b - (b * b - b + 1);
+    var fa = a * a * a - a * a - a + 1;
+    var fb = b * b * b - b * b - b + 1;
     var c = b - (fb * (b - a)) / (fb - fa);
-    var fc = c * c * c - (c * c - c + 1);
+    var fc = c * c * c - c * c - c + 1;
 
     /* if value input = null */
     if (iterasi == "" || a == "" || b == "") {
