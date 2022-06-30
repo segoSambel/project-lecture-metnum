@@ -7,90 +7,151 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* Body */
 body {
-    background-color: #b8dafc;
+    background-image: linear-gradient(254.41deg, rgba(248, 218, 227, 0.5) 24.02%, rgba(185, 235, 226, 0.59) 82.29%);
 }
 
-/* Container */
-.container {
-    width: 700px;
-    height: 500px;
-    background-color: #fff;
-    margin: 120px 0 120px 100px;
-    border-radius: 10px;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+/* NavBar */
+.title {
+    width: 220px;
+    margin-top: 26px;
+    margin-left: 63px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    background: linear-gradient(92.88deg, #FC3F6D 18.82%, rgba(141, 77, 131, 0.94) 74.25%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
-/* Title */
-.title h2 {
-    font-size: 40px;
-    font-weight: 600;
-    text-transform: uppercase;
+.btn-sosmed {
+    margin-top: 26px;
+}
+
+.btn-sosmed a.github {
+    width: 147px;
+    margin-right: 38px;
+    padding: 10px 30px;
+    background: #000000;
+    border-radius: 15px;
     text-align: center;
-    padding-top: 20px;
-}
-
-.title p {
-    font-size: 15px;
-    text-align: center;
-    padding-top: 20px;
-}
-
-/* Pages */
-.pages {
-    display: flex;
-    justify-content: space-between;
-    padding: 50px;
-}
-
-.pages a {
+    line-height: 48px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
     text-decoration: none;
+}
+
+.btn-sosmed a.github:active {
+    background: #fff;
     color: #000;
-    font-size: 20px;
-    font-weight: 600;
-    font-variant: small-caps;
 }
 
-.pages .box-pages {
-    width: 300px;
-    height: 100px;
-    margin: 15px;
-    padding: 15px;
-    box-sizing: border-box;
-    border-radius: 5px;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
-    background-color: lightblue;
+.btn-sosmed a.instagram {
+    width: 147px;
+    margin-right: 63px;
+    padding: 10px 15px;
+    background: #E43962;
+    border-radius: 15px;
     text-align: center;
-    line-height: 70px;
+    line-height: 48px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
-.pages .box-pages:hover {
-    background-color: lightcoral;
+.btn-sosmed a.instagram:active {
+    background: #fff;
+    color: #000;
 }
 
-.pages .box-pages:active {
-    background-color: lightblue;
+/* Hero */
+.hero-image img {
+    margin-top: 20px;
+    width: 700px;
 }
 
-/* Image */
-.image {
-    position: absolute;
-    top: 150px;
-    right: 50px;
+.head-desc {
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
 }
 
-/* Noted */
-.noted {
-    width: 600px;
-    margin: 20px auto;
+.body-desc {
+    margin-top: -10px;
+    font-weight: 500;
+    font-size: 16px;
 }
 
-.noted img {
-    float: left;
-    margin-right: 10px;
-    margin-top: 5px;
+.footer-desc {
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
 }
 
-.noted p {
-    color: rgb(239, 62, 62);
+/* Card */
+.card {
+    margin: 40px 10px 10px;
+    width: 191px;
+    height: 122px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+}
+
+.card p {
+    margin-top: 15px;
+    color: #000;
+    font-weight: normal;
+}
+
+.card .btn-card {
+    margin-top: 15px;
+    padding: 5px 5px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+.card .btn-card:active {
+    background: #fff;
+    color: #000;
+}
+
+.card .btn-card1 {
+    background: #FF5353;
+}
+
+.card .btn-card2 {
+    background: #FFB053;
+}
+
+.card .btn-card3 {
+    background: #4BCD58;
+}
+
+.card .btn-card4 {
+    background: #53C1FF;
+}
+
+.card .btn-card5 {
+    background: #535AFF;
+}
+
+.card .btn-card6 {
+    background: #FF53CF;
+}
+
+@media (max-width: 500px) {
+    .hero-image img {
+        width: 300px;
+    }
 }

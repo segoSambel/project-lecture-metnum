@@ -1,41 +1,87 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- May Style CSS -->
+    <link rel="stylesheet" href="./src/style/style.css">
     <title>Metode Numerik - Project UAS</title>
-    <link rel="stylesheet" href="src/style/style.css">
 </head>
 
 <body>
-    <!-- Container -->
-    <div class="container">
-        <!-- Title -->
-        <div class="title">
-            <h2>Metode Numerik</h2>
-            <p><i>ReyhanHQQ - Created by FrontEndDev</i></p>
+    <!-- NavBar -->
+    <nav class="navbar navbar-light">
+        <div class="container-fluid">
+            <span class="title">MetodeNumerik</span>
+            <div class="btn-sosmed">
+                <a href="https://github.com/reyhanhaqiqi" class="github">MyGithub</a>
+                <a href="https://www.instagram.com/_reyhanhaqiqi___/" class="instagram">MyInstagram</a>
+            </div>
         </div>
+    </nav>
 
-        <!-- Pages -->
-        <div class="pages">
-            <a href="./src/pages/regula-falsi/index.html" class="box-pages">Metode Regula Falsi</a>
-            <a href="./src/pages/newton-rapshon/" class="box-pages">Metode Newton Raphson</a>
+    <!-- Hero -->
+    <div class="container-fluid">
+        <div class="row text-center">
+            <div class="hero-image">
+                <img src="./src/asset/image/hero-image.png" alt="Hero Image">
+            </div>
         </div>
-
-        <!-- Image -->
-        <div class="image">
-            <img src="./src/asset/image/image-index.jpg" alt="Image Mathematic" width="700px">
-        </div>
-
-        <!-- Noted -->
-        <div class="noted">
-            <img src="./src/asset/image/noted.jpg" alt="Noted Image" width="40px">
-            <p>Metode di atas sudah terintegrasi dengan rumus yang sama, pilih salah satu untuk mencobanya !!</p>
+        <div class="row text-center">
+            <div class="col-md-12">
+                <div class="desc">
+                    <p class="head-desc">Belajar Metode Numerik dengan Topic Metode SPNL</p>
+                    <p class="body-desc">Coba beberapa Metode SPNL yang tersedia dan buatlah dengan nilaimu sendiri...
+                    </p>
+                    <p class="body-desc">Metode yang tersedia sudah terintegrasi dengan rumus yang sama.</p>
+                    <p class="footer-desc">Selamat Mancoba !!!!</p>
+                </div>
+            </div>
         </div>
     </div>
 
+    <!-- Card -->
+    <div class="container">
+        <div class="row justify-content-center text-center mb-4">
+            <div class="card">
+                <p>Tabulasi</p>
+                <a href="" class="btn-card btn-card1">Coba Sekarang</a>
+            </div>
+            <div class="card">
+                <p>Biseksi</p>
+                <a href="./src/pages/biseksi/index.html" class="btn-card btn-card2">Coba
+                    Sekarang</a>
+            </div>
+            <div class="card">
+                <p>Regula Falsi</p>
+                <a href="./src/pages/regula-falsi/index.html" class="btn-card btn-card3">Coba Sekarang</a>
+            </div>
+            <div class="card">
+                <p>Iterasi Titik Tetap</p>
+                <a href="" class="btn-card btn-card4">Coba Sekarang</a>
+            </div>
+            <div class="card">
+                <p>Newton Raphson</p>
+                <a href="./src/pages/newton-rapshon/index.html" class="btn-card btn-card5">Coba Sekarang</a>
+            </div>
+            <div class="card">
+                <p>Secant</p>
+                <a href="" class="btn-card btn-card6">Coba Sekarang</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
