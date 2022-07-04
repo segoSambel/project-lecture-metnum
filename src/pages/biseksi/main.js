@@ -1,9 +1,9 @@
 /* Function resultData Start */
 function resultData() {
     /* Declaration Variables */
-    var iterasi = document.querySelector(".iterasi").value;
-    var a = document.querySelector(".a").value;
-    var b = document.querySelector(".b").value;
+    var iterasi = parseInt(document.querySelector(".iterasi").value);
+    var a = parseFloat(document.querySelector(".a").value);
+    var b = parseFloat(document.querySelector(".b").value);
     var c = (a + b) / 2;
     var fa = a * a * a - a * a - a + 1;
     var fb = b * b * b - b * b - b + 1;
@@ -12,8 +12,14 @@ function resultData() {
     var er = Math.abs(c - b)
 
     /* if value input = null */
-    if (iterasi == "" || a == "" || b == "") {
-        alert("Masukkan angka di kolom yang tersedia");
+    if (iterasi == 0 && a == 0 && b == 0) {
+        alert("Masukkan angka dengan benar!!");
+        return;
+    } else if (iterasi == 0) {
+        alert("Masukkan angka dengan benar!!")
+        return;
+    } else if (a == 0 && b == 0) {
+        alert("Masukkan angka dengan benar!!");
         return;
     }
 
@@ -39,12 +45,12 @@ function resultData() {
     document.querySelector(".c-box").appendChild(cElement);
 
     var faElement = document.createElement("h4");
-    var faText = document.createTextNode(fa);
+    var faText = document.createTextNode(fa.toFixed(5));
     faElement.appendChild(faText);
     document.querySelector(".fa-box").appendChild(faElement);
 
     var fbElement = document.createElement("h4");
-    var fbText = document.createTextNode(fb);
+    var fbText = document.createTextNode(fb.toFixed(5));
     fbElement.appendChild(fbText);
     document.querySelector(".fb-box").appendChild(fbElement);
 
@@ -72,7 +78,7 @@ function resultData() {
     }
 
     var erElement = document.createElement("h4");
-    var erText = document.createTextNode(er);
+    var erText = document.createTextNode(er.toFixed(5));
     erElement.appendChild(erText);
     document.querySelector(".er-box").appendChild(erElement);
     /* Output on first row list data result End */
@@ -96,12 +102,12 @@ function resultData() {
 
             /* b create element, looping & if statement */
             var bCreateElement = document.createElement("p");
-            var bText = document.createTextNode(b);
+            var bText = document.createTextNode(b.toFixed(5));
             bCreateElement.appendChild(bText);
             document.querySelector(".b-box").appendChild(bCreateElement);
 
             /* c create element, looping & if statement*/
-            var c = (a + 1) / 2;
+            var c = (a + b) / 2;
             var cCreateElement = document.createElement("p");
             var cText = document.createTextNode(c.toFixed(5));
             cCreateElement.appendChild(cText);
@@ -117,7 +123,7 @@ function resultData() {
             /* fb create element, looping & if statement*/
             var fb = b * b * b - b * b - b + 1;
             var fbCreateElement = document.createElement("p");
-            var fbText = document.createTextNode(fb);
+            var fbText = document.createTextNode(fb.toFixed(5));
             fbCreateElement.appendChild(fbText);
             document.querySelector(".fb-box").appendChild(fbCreateElement);
 
@@ -151,7 +157,7 @@ function resultData() {
         } else if (fafc < 0) {
             /* a create element, looping & if statement */
             var aCreateElement = document.createElement("p");
-            var text = document.createTextNode(a);
+            var text = document.createTextNode(a.toFixed(5));
             aCreateElement.appendChild(text);
             document.querySelector(".a-box").appendChild(aCreateElement);
 
