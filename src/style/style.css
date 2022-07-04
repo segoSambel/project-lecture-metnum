@@ -99,9 +99,9 @@ body {
 
 /* Card */
 .card {
-    margin: 40px 10px 10px;
+    margin: 20px 10px 10px;
     width: 191px;
-    height: 122px;
+    height: 142px;
     background: rgba(255, 255, 255, 0.7);
     border-radius: 5px;
 }
@@ -112,8 +112,14 @@ body {
     font-weight: normal;
 }
 
+.card span {
+    margin-top: -15px;
+    font-size: 12px;
+    font-style: italic;
+}
+
 .card .btn-card {
-    margin-top: 15px;
+    margin-top: 30px;
     padding: 5px 5px;
     border-radius: 20px;
     text-decoration: none;
