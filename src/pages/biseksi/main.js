@@ -220,7 +220,7 @@ function resultData() {
     /* Looping for results End */
 
     window.scrollTo({
-        top: 600,
+        top: 700,
         behavior: "smooth",
     });
 }
