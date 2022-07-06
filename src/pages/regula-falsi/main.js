@@ -57,8 +57,8 @@ function resultData() {
     fcElement.appendChild(fcText);
     document.querySelector(".fc-box").appendChild(fcElement);
 
-    var erElement = document.createElement("div");
-    var erText = document.createTextNode(0);
+    var erElement = document.createElement("h4");
+    var erText = document.createTextNode("");
     erElement.appendChild(erText);
     document.querySelector(".er-box").appendChild(erElement);
     /* Output on first row list data result End */
