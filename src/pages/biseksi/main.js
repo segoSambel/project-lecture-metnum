@@ -16,10 +16,10 @@ function resultData() {
         alert("Masukkan angka dengan benar!!");
         return;
     } else if (iterasi == 0) {
-        alert("Masukkan angka dengan benar!!")
+        alert("Masukkan jumlah iterasi dengan benar!!")
         return;
     } else if (a == 0 && b == 0) {
-        alert("Masukkan angka dengan benar!!");
+        alert("Masukkan nilai a dan b dengan benar!!");
         return;
     }
 

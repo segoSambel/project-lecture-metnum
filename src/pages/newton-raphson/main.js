@@ -12,7 +12,10 @@ function resultData() {
         alert("Masukkan angka dengan benar!!");
         return;
     } else if (iterasi == 0) {
-        alert("Masukkan angka dengan benar!!");
+        alert("Masukkan jumlah iterasi dengan benar!!");
+        return;
+    } else if (xr == 0) {
+        alert("Masukkan nilai xr dengan benar!!");
         return;
     }
     /* if value input = null End */
@@ -29,8 +32,8 @@ function resultData() {
     xrElement.appendChild(xrText);
     document.querySelector(".xr-box").appendChild(xrElement);
 
-    var erElement = document.createElement("div");
-    var erText = document.createTextNode(0);
+    var erElement = document.createElement("h4");
+    var erText = document.createTextNode("");
     erElement.appendChild(erText);
     document.querySelector(".er-box").appendChild(erElement);
     /* Output on first row list data result End */
@@ -64,7 +67,7 @@ function resultData() {
     /* Looping for results End */
 
     window.scrollTo({
-        top: 550,
+        top: 630,
         behavior: "smooth",
     });
 }

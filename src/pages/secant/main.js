@@ -2,19 +2,22 @@
 function resultData() {
     /* Declaration Variables Start */
     var iterasi = parseInt(document.querySelector(".iterasi").value);
-    var xr1 = parseFloat(document.querySelector(".xr-1").value);
+    var xr1 = parseFloat(document.querySelector(".xr1").value);
     var xr = parseFloat(document.querySelector(".xr").value);
     /* Declaration Variables End */
 
     /* if value input = null Start */
-    if (iterasi == 0 && xr == 0) {
+    if (iterasi == 0 && xr1 == 0) {
+        alert("Masukkan angka dengan benar!!");
+        return;
+    } else if (iterasi == 0 && xr == 0) {
         alert("Masukkan angka dengan benar!!");
         return;
     } else if (iterasi == 0) {
-        alert("Masukkan angka dengan benar!!");
+        alert("Masukkan jumlah iterasi dengan benar!!");
         return;
     } else if (xr1 == 0 && xr == 0) {
-        alert("Masukkan angka dengan benar!!");
+        alert("Masukkan nilai xr-1 dan xr dengan benar!!");
         return;
     }
     /* if value input = null End */
@@ -31,7 +34,7 @@ function resultData() {
     xr1Element.appendChild(xr1Text);
     document.querySelector(".xr-box").appendChild(xr1Element);
 
-    var erElement = document.createElement("div");
+    var erElement = document.createElement("h4");
     var erText = document.createTextNode(0);
     erElement.appendChild(erText);
     document.querySelector(".er-box").appendChild(erElement);
@@ -49,7 +52,7 @@ function resultData() {
     document.querySelector(".xr-box").appendChild(xrElement);
 
     var er = Math.abs(xr1 - xr);
-    var erElement = document.createElement("div");
+    var erElement = document.createElement("h4");
     var erText = document.createTextNode(er.toFixed(5));
     erElement.appendChild(erText);
     document.querySelector(".er-box").appendChild(erElement);
@@ -87,7 +90,7 @@ function resultData() {
     /* Looping for results End */
 
     window.scrollTo({
-        top: 590,
+        top: 700,
         behavior: "smooth",
     });
 }
