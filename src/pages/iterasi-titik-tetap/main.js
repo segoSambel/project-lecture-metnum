@@ -27,7 +27,7 @@ function resultData() {
     document.querySelector(".iterasi-box").appendChild(iterasiElement);
 
     var xrElement = document.createElement("h4");
-    var xrText = document.createTextNode(xr.toFixed(2));
+    var xrText = document.createTextNode(xr);
     xrElement.appendChild(xrText);
     document.querySelector(".xr-box").appendChild(xrElement);
 
@@ -50,7 +50,7 @@ function resultData() {
         var temp = xr;
 
         /* xr create element & looping */
-        var xr = xr - (xr * xr * xr - xr * xr - xr + 1) / (3 * xr * xr - 2 * xr - 1 + 0);
+        var xr = 1 / 3 * (Math.sqrt(Math.abs(xr * xr + xr - 1)));
         var xrCreateElement = document.createElement("p");
         var xrText = document.createTextNode(xr.toFixed(5));
         xrCreateElement.appendChild(xrText);

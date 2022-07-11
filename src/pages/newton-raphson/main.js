@@ -28,7 +28,7 @@ function resultData() {
     document.querySelector(".iterasi-box").appendChild(iterasiElement);
 
     var xrElement = document.createElement("h4");
-    var xrText = document.createTextNode(xr.toFixed(2));
+    var xrText = document.createTextNode(xr);
     xrElement.appendChild(xrText);
     document.querySelector(".xr-box").appendChild(xrElement);
 
